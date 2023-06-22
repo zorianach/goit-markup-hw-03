@@ -112,6 +112,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  padding: 24px 0;
 }
 
 .header-link:hover,
@@ -159,7 +160,7 @@ ol {
   color: var(--white-background-color);
   text-align: center;
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -177,6 +178,8 @@ ol {
   margin-left: auto;
   min-width: 169px;
   min-height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -189,7 +192,7 @@ ol {
   |============================
 */
 .section-benefits {
-  padding-top: 120px;
+  padding: 120px 0;
 }
 .benefits-title {
 }
@@ -267,12 +270,17 @@ ol {
 .team-list {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 .team-member {
   background-color: var(--white-background-color);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-img {
   margin-bottom: 32px;
+}
+.container-employee {
+  padding: 32px 16px;
 }
 .member-name {
   font-weight: 500;
@@ -289,7 +297,6 @@ ol {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--body-text-color);
-  margin-bottom: 32px;
 }
 
 /**
@@ -312,7 +319,7 @@ ol {
   color: var(--primary-brand-color);
 }
 .footer-logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
 .footer-logo-white {
@@ -323,7 +330,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud-light-color);
-  width: 264px;
+  max-width: 264px;
 }
 
 /**
@@ -331,14 +338,18 @@ ol {
   | Portfolio styles
   |============================
 */
+
+.portfolio-section {
+  padding: 96px 0 120px 0;
+}
+
 .portfolio-filter {
   display: flex;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
   gap: 24px;
-  padding-top: 96px;
-  padding-bottom: 12px;
+  padding-bottom: 72px;
 }
 .filter-item {
 }
@@ -351,12 +362,14 @@ ol {
   color: var(--primary-brand-color);
   background-color: var(--cloud-light-color);
   border: 1px solid var(--cornflower-accent-color);
+  border-radius: 4px;
   padding: 12px 24px;
 }
 .filter-button:hover,
 .filter-button:focus {
   color: var(--white-background-color);
   background-color: var(--pressed-state-color);
+  border: 1px solid transparent;
 }
 
 .portfolio-galery {
@@ -365,7 +378,6 @@ ol {
   flex-direction: row;
   row-gap: 48px;
   column-gap: 24px;
-  padding-bottom: 120px;
 }
 .project-link {
   color: var(--body-text-color);
@@ -376,9 +388,7 @@ ol {
 .portfolio-container {
   border: 1px solid var(--cornflower-accent-color);
   border-top: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
 }
 /* margin-right: 24px;
   margin-bottom: 24px;
@@ -397,6 +407,7 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 .portfolio-item-type {
   font-size: 16px;
